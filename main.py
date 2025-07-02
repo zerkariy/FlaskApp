@@ -19,9 +19,5 @@ def about():
   print(url_for('about'))
   return render_template('about.html', title='jopa', menu=menu)
 
-@app.route('/popka')
-def popka():
-  return "<h3>popka</h3>"
-
 if __name__ == '__main__':
   app.run(debug=True) # debug true задаем специально для разработки (в данном случае при обновление/изменение кода приложение автоматически само обновит данные на сайте)
